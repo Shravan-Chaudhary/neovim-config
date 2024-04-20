@@ -6,6 +6,8 @@ local opts = { noremap = true, silent = true }
 
 keymap.set("n", "<leader>d", function() vim.cmd('bd') end)
 vim.api.nvim_set_keymap('t', '<Esc>', [[<C-\><C-n>]], { noremap = true })
+vim.keymap.set("i", "jj", "<Esc>")
+vim.keymap.set("i", "jk", "<Esc>")
 
 keymap.set("n", "<leader>l", function() vim.cmd('terminal fish') end)
 
